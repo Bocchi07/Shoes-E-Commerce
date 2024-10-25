@@ -84,14 +84,14 @@ function ProductView({product, handleCart, handleCartIsActive, handleIncPrice}) 
 				transition={{duration:1, ease: "easeInOut"}}
 			>
 			  <div>
-			 	 <h1 className="text-3xl font-bold">{product.name}</h1>
+			 	 <h1 className="text-3xl font-bold max-sm:text-xl">{product.name}</h1>
 			 	 <p>{product.for}</p>
  			 	 <p className="flex items-center gap-x-2">{product.rating} <span><FaStar /></span></p>
 			  </div>
 
-			  <h4 className="text-2xl font-semibold mt-2">₱{formatOrigPrice()}</h4>
+			  <h4 className="text-2xl font-semibold mt-2 max-sm:text-xl">₱{formatOrigPrice()}</h4>
 
-			  <div className="h-28 w-32 p-2 bg-slate-100 rounded-md border-[2px] border-slate-500 flex items-center">
+			  <div className="max-sm:hidden h-28 w-32 p-2 bg-slate-100 rounded-md border-[2px] border-slate-500 flex items-center">
 			  	 <img src={`/images/${product.image}`} alt="" className="w-full"/>
 			  </div>
 
