@@ -42,7 +42,7 @@ function ProductList({product, viewProduct}) {
 
 				<div className="p-1 text-sm">
 					<div className="flex justify-between font-semibold">
-						<h4>{product.name}</h4>
+						<h4>Haha{product.name}</h4>
 						<p>₱{product.price}</p>
 					</div>
 
