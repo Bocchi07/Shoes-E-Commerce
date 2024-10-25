@@ -15,6 +15,13 @@ function Home() {
 	useEffect(() => {
 		setIsVisible(true);
 		}, []);
+	
+	  const scrollToTop = () => {
+	    window.scrollTo({
+	      top: 0,
+	      behavior: 'smooth',
+	    });
+	  };
 
 	return (
 		<div>
@@ -45,7 +52,7 @@ function Home() {
 					<div className="my-auto md:mt-10 md:w-52">
 						<h4 className="max-sm:text-3xl text-4xl font-bold ">Men</h4>
 						<p className="max-sm:text-sm">See our men collection for style and comfort</p>
-						<Link to="/men"><button className="bg-black text-white p-2 px-3 mt-2 font-semibold">Explore</button> </Link>
+						<Link to="/men"><button onClick={scrollToTop} className="bg-black text-white p-2 px-3 mt-2 font-semibold">Explore</button> </Link>
 					</div>
 				</div>
 			</AnimatePresence>
