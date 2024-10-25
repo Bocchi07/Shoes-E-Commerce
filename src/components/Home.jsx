@@ -63,7 +63,7 @@ function Home() {
 				<div className="my-auto md:mt-10 order-first md:w-56">
 					<h4 className="max-sm:text-3xl text-4xl font-bold">Women</h4>
 					<p className="max-sm:text-sm">Explore our women’s collection   for elegance and flair</p>
-					<Link to="/women"><button className="bg-black text-white p-2 px-3 mt-2 font-semibold">Explore</button></Link>
+					<Link to="/women"><button onClick={scrollToTop} className="bg-black text-white p-2 px-3 mt-2 font-semibold">Explore</button></Link>
 				</div>
 			</div>
 
@@ -73,7 +73,7 @@ function Home() {
 				<div className="my-auto md:mt-10 md:w-52">
 					<h4 className="max-sm:text-3xl text-4xl font-bold">Kids</h4>
 					<p className="max-sm:text-sm">Check out our kids’ collection for fun and adventure</p>
-					<Link to="/kids"><button className="bg-black text-white p-2 px-3 mt-2 font-semibold">Explore</button></Link>
+					<Link to="/kids"><button onClick={scrollToTop} className="bg-black text-white p-2 px-3 mt-2 font-semibold">Explore</button></Link>
 				</div>
 			</div>
 
@@ -83,7 +83,7 @@ function Home() {
 				<div className="my-auto md:mt-10 order-first md:w-56">
 					<h4 className="max-sm:text-3xl text-4xl font-bold">Unisex</h4>
 					<p className="max-sm:text-sm">Discover our unisex collection for versatile footwear</p>
-					<Link to="/unisex"><button className="bg-black text-white p-2 px-3 mt-2 font-semibold">Explore</button></Link>
+					<Link to="/unisex"><button onClick={scrollToTop} className="bg-black text-white p-2 px-3 mt-2 font-semibold">Explore</button></Link>
 				</div>
 			</div>
 		</div>
