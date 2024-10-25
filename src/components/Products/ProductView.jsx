@@ -63,7 +63,7 @@ function ProductView({product, handleCart, handleCartIsActive, handleIncPrice}) 
 	return (
 		<div className="md:grid grid-cols-2 gap-x-4 text-left">
 			<motion.div
-				className="bg-gray-200 max-md:h-[30rem] h-[40rem] flex justify-center items-center"
+				className="bg-gray-200 max-md:h-[26rem] h-[40rem] flex justify-center items-center"
 				animate={{x:0, filter: "blur(0px)"}}
 				initial={{x:-50, filter: "blur(7px)"}}
 				transition={{duration: 1, ease: "easeInOut"}}
@@ -78,7 +78,7 @@ function ProductView({product, handleCart, handleCartIsActive, handleIncPrice}) 
 			</motion.div>
 
 			<motion.div
-				className="flex flex-col gap-y-4 md:p-8 p-2 mt-4"
+				className="flex flex-col gap-y-4 md:p-8 md:p-2 mt-4"
 				initial={{x:50, filter: "blur(5px)"}}
 				animate={{x:0, filter: "blur(0px)"}}
 				transition={{duration:1, ease: "easeInOut"}}
