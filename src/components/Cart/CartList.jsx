@@ -90,7 +90,7 @@ function CartList({
 		<div className="mt-4">
 			<div className="flex h-28 text-left">
 				<div className="w-[30%] bg-slate-100 p-2 flex justify-center items-center">
-					<img src={`./src/assets/images/${item.image}`} alt="img_not_found" />
+					<img src={`/images/${item.image}`} alt="img_not_found" />
 				</div>
 
 				<div className="flex-1 p-2 font-arial">
