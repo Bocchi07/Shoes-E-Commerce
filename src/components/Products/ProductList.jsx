@@ -32,7 +32,7 @@ function ProductList({product, viewProduct}) {
 					>
 						<div className={`bg-gray-200 max-md:h-48 h-60 rounded-md flex justify-center items-center transition-all ease-in-out duration-600  ${loading ? 'filter blur-md' : 'filter blur-0 '}`}>
 							<img src={`../../assets/images/${product.image}`}
-							 alt="img_not_found"
+							 alt={product.name}
 							 className={`w-[90%] `}
 							 onLoad={() => setLoading(false)}
 							 onError={() => setLoading(false)}
@@ -42,7 +42,7 @@ function ProductList({product, viewProduct}) {
 
 				<div className="p-1 text-sm">
 					<div className="flex justify-between font-semibold">
-						<h4>Haha{product.name}</h4>
+						<h4>{product.name}</h4>
 						<p>₱{product.price}</p>
 					</div>
 
