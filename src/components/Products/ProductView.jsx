@@ -151,9 +151,5 @@ function ProductView({product, handleCart, handleCartIsActive, handleIncPrice}) 
 		</div>
 	)
 }
-
-<<<<<<< HEAD
 export default ProductView;
-=======
-export default ProductView
->>>>>>> dcdb1b205eaa437f8a54c7ae3f3800a9ee4a4f25
+
