@@ -29,11 +29,11 @@ To bring this e-commerce application to life, we utilized several modern technol
 To run this project locally:
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/shoes-ecommerce.git
+    git clone https://github.com/Bocchi07/Shoes-E-Commerce
     ```
 2. Install dependencies:
     ```bash
-    cd shoes-ecommerce
+    cd Shoes-E-Commerce
     npm install
     ```
 3. Start the development server:
