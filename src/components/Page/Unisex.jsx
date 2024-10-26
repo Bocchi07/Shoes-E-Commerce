@@ -3,6 +3,7 @@ import ProductList from "../Products/ProductList.jsx"
 import products from "../Products/products.json"
 import Filter from "../Filter/Filter.jsx"
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import filterIcon from "../../assets/img/filter.png"
 
 function Unisex({viewProduct}) {
 	const [unisexShoes, setUnisexShoes] = useState(products)
@@ -93,9 +94,10 @@ function Unisex({viewProduct}) {
 
       <div
         onClick={handleFilterIsActive}
-        className="sm:hidden bg-black text-white py-2 px-2 mb-4 rounded-md w-20 mr-auto cursor-pointer"
+        className="sm:hidden py-2 px-2 flex items-center justify-center  gap-x-2 border-[1px] border-slate-400  mb-4 rounded-full w-full  ml-auto cursor-pointer"
       >
-        Filter
+        <img src={filterIcon} alt="" className="w-4 h-4"/>
+        <p >Filter</p>
       </div>
 
       <TransitionGroup className="flex-1 grid max-sm:grid-cols-2 grid-cols-3 gap-4">

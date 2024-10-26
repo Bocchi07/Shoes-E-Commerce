@@ -29,8 +29,8 @@ function Header({handleCart, cart, setIsGenderActive, isGenderActive, signupForm
 			timeout={2000}
 			unmountOnExit
 		>
-		    <div className={`${location.pathname === "/signup-form" || location.pathname === "/login-form" ? "text-white" : "text-black"} flex justify-between items-center mb-14 z-20`}>
-				<div className="font-bold font-mono text-3xl"><Link to="/">E-Shoes</Link></div>
+		    <div className={`${location.pathname === "/signup-form" || location.pathname === "/login-form" ? "text-white" : "text-black"} flex justify-between items-center mb-14 max-sm:mb-10 z-20`}>
+				<div className="font-bold font-arial text-2xl max-sm:text-xl"><Link to="/">E-Shoes</Link></div>
 
 				<ul className={`max-sm:hidden relative flex gap-x-8 font-semibold `}>
 					<li><Link to="/men" className="">Men</Link></li>

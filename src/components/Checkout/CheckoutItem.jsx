@@ -12,7 +12,7 @@ function CheckoutItem({cart, removeCheckoutItem, popUpMsg}) {
 		<div className="grid grid-cols-2 p-2 max-sm:text-sm">
 			<div className="flex gap-x-2 h-full ">
 				<div className="w-[40%] max-sm:w-[50%] h-full] bg-gray-100 rounded-md flex justify-center items-center">
-					<img src={`./src/assets/images/${cart.image}`} alt="" className="  w-[80%] p-2"/>
+					<img src={`/images/${cart.image}`} alt="" className="  w-[80%] p-2"/>
 				</div>
 
 				<div className="flex-1">

@@ -18,7 +18,7 @@ function Home() {
 
 	return (
 		<div>
-			<div className=" flex flex-col p-2">
+			<div className=" flex flex-col">
 				<motion.h1
 					initial={{y:50, filter: "blur(10px)", opacity: 0}}
 					animate={{y: 0, filter: "blur(0)", opacity: 1}}

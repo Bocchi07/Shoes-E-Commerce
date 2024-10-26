@@ -135,7 +135,17 @@ function App() {
     window.localStorage.setItem("viewProductStorage", JSON.stringify(productData));
   }, [productData])
 
+
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   const handleProductView = async(product) => {
+    scrollToTop();
     await setProductData(product)
   }
 

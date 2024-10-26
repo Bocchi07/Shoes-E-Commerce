@@ -339,7 +339,7 @@ function Checkout({cart, totalPrice, clientAddressInfo, setClientAddressInfo, se
 				unmountOnExit
 			>
 
-				<div className="fixed text-nowrap text-center top-[16%] z-40 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-black bg-opacity-70 px-4  py-3 backdrop-blur-sm rounded-xl text-white">
+				<div className="fixed text-nowrap text-center top-[10%] z-40 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-black bg-opacity-70 px-4  py-3 backdrop-blur-sm rounded-xl text-white">
 					Please add a product first to complete your order.
 				</div>
 			</CSSTransition>
@@ -357,7 +357,7 @@ function Checkout({cart, totalPrice, clientAddressInfo, setClientAddressInfo, se
 			</CSSTransition>
 
 
-			<CSSTransition
+{/*			<CSSTransition
 				in={false}
 				timeout={400}
 				classNames="popupBox"
@@ -366,7 +366,7 @@ function Checkout({cart, totalPrice, clientAddressInfo, setClientAddressInfo, se
 					<div className="fixed text-nowrap text-center top-[10%] z-40 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-green-400 bg-opacity-70 px-4  py-3 backdrop-blur-sm rounded-xl text-black">
 						Thank you for your order! Your items will arrive within 3 days.
 					</div>
-			</CSSTransition>
+			</CSSTransition>*/}
 
 			<CSSTransition
 				in={orderedMessage}

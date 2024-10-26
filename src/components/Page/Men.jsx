@@ -4,6 +4,7 @@ import products from "../Products/products.json";
 import Filter from "../Filter/Filter.jsx";
 import { CSSTransition } from 'react-transition-group';
 import '../../App.css';
+import filterIcon from "../../assets/img/filter.png"
 
 function Men({ viewProduct }) {
   const [menShoes, setMenShoes] = useState(products);
@@ -72,7 +73,7 @@ function Men({ viewProduct }) {
   });
 
   return (
-    <div className="sm:flex gap-x-4 relative">
+    <div className="sm:flex gap-x-4 relative ">
       <Filter
         handleFilterIsActive={handleFilterIsActive}
         isFilterActive={isFilterActive}
@@ -84,9 +85,10 @@ function Men({ viewProduct }) {
 
       <div
         onClick={handleFilterIsActive}
-        className="sm:hidden bg-black text-white py-2 px-2 mb-4 rounded-md w-20 mr-auto cursor-pointer"
+        className="sm:hidden py-2 px-2 flex items-center justify-center  gap-x-2 border-[1px] border-slate-400  mb-4 rounded-full w-full  ml-auto cursor-pointer"
       >
-        Filter
+        <img src={filterIcon} alt="" className="w-4 h-4"/>
+        <p >Filter</p>
       </div>
 
       <div className="flex-1 grid max-sm:grid-cols-2 grid-cols-3 gap-4">

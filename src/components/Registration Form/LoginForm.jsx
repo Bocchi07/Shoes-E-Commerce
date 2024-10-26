@@ -131,7 +131,7 @@ function LoginForm({signupFormData, setLoginSuccessfully, loginSuccessfully}) {
 		            timeout={1000}
 		            unmountOnExit
 		        >
-		             <div className="bg-green-500 rounded-md  p-2 fixed top-[15vh] left-1/2 -translate-y-1/2 -translate-x-1/2 h-20 z-20 text-black flex flex-col items-center justify-center">
+		             <div className="bg-green-500 rounded-md  p-2 fixed top-[0vh] left-1/2 -translate-y-1/2 -translate-x-1/2 h-20 z-20 text-black flex flex-col items-center justify-center">
 		              	<h4 className="flex items-center font-semibold text-lg">Signup Successful! <FaCheck  className="ml-3"/></h4>
 
 						<p className="text-sm text-nowrap">Your account has been created successfully</p>
@@ -161,7 +161,7 @@ function LoginForm({signupFormData, setLoginSuccessfully, loginSuccessfully}) {
 					classNames="popupBox"
 					unmountOnExit
 		        >
-			        <div className="fixed max-sm:w-80 p-3 text-center flex  justify-start rounded-xl bg-white text-black bg-opacity-60 backdrop-blur-sm -translate-x-1/2 -translate-y-1/2 top-[10vh] left-1/2 font-semibold">
+			        <div className="fixed max-sm:w-80 p-3 text-center flex  justify-start rounded-xl bg-white text-black bg-opacity-60 backdrop-blur-sm -translate-x-1/2 -translate-y-1/2 -top-[2vh] left-1/2 font-semibold">
 			        	{alertMessage}
 			        </div>
 		        </CSSTransition>

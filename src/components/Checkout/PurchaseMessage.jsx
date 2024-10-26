@@ -48,7 +48,7 @@ function PurchaseMessage({checkoutItem, setCheckOutItem, setCart}) {
 								      return (
 								        <div key={i} className="flex h-24 mb-2 items-center justify-between p-4 gap-2 border-b-[1px] border-slate-200">
 								          <div className="w-[20%] h-full flex items-center justify-center">
-			        				          <img src={`./src/assets/images/${item.image}`} alt="" className="max-h-full w-full object-contain"/>
+			        				          <img src={`/images/${item.image}`} alt="" className="max-h-full w-full object-contain"/>
 								          </div>
 								          <div className="text-left flex-1">{item.name}</div>
 								          <div className="font-semibold w-[20%]">₱{item.price}</div>

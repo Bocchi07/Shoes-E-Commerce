@@ -43,11 +43,17 @@ function ProductView({product, handleCart, handleCartIsActive, handleIncPrice}) 
 		})
 	}, [selectedSize])
 
-	// console.log(history)
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
-  	const handleGoBack = () => {
-	    navigate(-1); // Navigate back
-	  };
+  const handleGoBack = () => {
+    scrollToTop(); // Call scrollToTop before navigating back
+    navigate(-1); // Navigate back
+  };
 
 
 	const handleSizeGuide = () => {
@@ -63,7 +69,7 @@ function ProductView({product, handleCart, handleCartIsActive, handleIncPrice}) 
 				transition={{duration: 1, ease: "easeInOut"}}
 			>
 				<img
-					src={`./src/assets/images/${product.image}`}
+					src={`/images/${product.image}`}
 					alt="img_not_found"
 					className="w-[90%]"
 			        onLoad={() => setLoadingImg(false)}
@@ -86,7 +92,7 @@ function ProductView({product, handleCart, handleCartIsActive, handleIncPrice}) 
 			  <h4 className="text-2xl font-semibold mt-2">₱{formatOrigPrice()}</h4>
 
 			  <div className="h-28 w-32 p-2 bg-slate-100 rounded-md border-[2px] border-slate-500 flex items-center">
-			  	 <img src={`./src/assets/images/${product.image}`} alt="" className="w-full"/>
+			  	 <img src={`/images/${product.image}`} alt="" className="w-full"/>
 			  </div>
 
 			  <div className="my-2">
@@ -142,9 +148,8 @@ function ProductView({product, handleCart, handleCartIsActive, handleIncPrice}) 
 			{
 				sizeGuideIsActive && <div className="fixed z-10 bg-black inset-0 opacity-20"></div>
 			}
-
 		</div>
 	)
 }
 
-export default ProductView
+export default ProductView;

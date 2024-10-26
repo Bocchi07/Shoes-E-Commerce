@@ -5,6 +5,7 @@ import products from "../Products/products.json"
 import Filter from "../Filter/Filter.jsx"
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import '../../App.css'; // Ensure you import your CSS for transitions
+import filterIcon from "../../assets/img/filter.png"
 
 function Women({viewProduct}) {
   const [womenShoes, setWomenShoes] = useState(products);
@@ -85,7 +86,14 @@ function Women({viewProduct}) {
 		<div className="sm:flex  gap-x-4 relative">
 		  <Filter isFilterActive={isFilterActive} handleFilterIsActive={handleFilterIsActive} sortBy={handleSortBy} handleFilterBy={handleFilterBy} handleColorFilter={handleColorFilter} color={colorArr}/>
 
-        <div onClick={handleFilterIsActive} className={`sm:hidden bg-black text-white py-2 px-2 mb-4 rounded-md w-20 mr-auto cursor-pointer`}>Filter</div>
+        <div
+        onClick={handleFilterIsActive}
+        className="sm:hidden py-2 px-2 flex items-center justify-center  gap-x-2 border-[1px] border-slate-400  mb-4 rounded-full w-full  ml-auto cursor-pointer"
+      >
+        <img src={filterIcon} alt="" className="w-4 h-4"/>
+        <p >Filter</p>
+      </div>
+
 
         <TransitionGroup className="flex-1 grid max-sm:grid-cols-2 grid-cols-3 gap-4">
           {filteredWomenShoes.map((product) => (
