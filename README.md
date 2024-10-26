@@ -22,6 +22,8 @@ To bring this e-commerce application to life, we utilized several modern technol
 - **Tailwind CSS**: A utility-first CSS framework that enables rapid, responsive styling and a clean, consistent layout.
 - **React Icons**: Provides a set of icons for enhanced visual aesthetics and user-friendly navigation.
 - **Framer Motion**: Used for smooth animations and transitions to improve the app's interactivity and user experience.
+- **Git** (Manages source code changes and collaboration through version tracking).
+- **VSCode** (A versatile code editor with debugging, syntax highlighting, and code completion.)
 
 ## How to Use
 
