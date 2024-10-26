@@ -1,0 +1,230 @@
+#root {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+body{
+  background-color: rgba(220, 226, 226, .4);
+  color: black;
+}
+
+
+.gcash-container:hover .gcash-not-avail{
+  display: flex;
+  opacity: 100;
+}
+
+.gcash-not-avail{
+  opacity: 0;
+  cursor: not-allowed;
+  display: none;
+  background: rgba( 90, 90, 90, 0.25 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  transition: all 100ms ease-in-out;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  z-index: -1; /* Make sure the video is behind other content */
+  object-fit: cover;
+}
+
+
+.background-video::before {
+  content: 'd';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+  z-index: 1; /* Make sure it's above the video */
+}
+
+
+.header-enter{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-2rem);
+}
+
+.header-enter-active{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transition: all 2s ease-in-out;
+}
+
+.UserAccount-enter{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-2rem);
+}
+
+.UserAccount-enter-active{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transition: all 1s ease-in-out;
+}
+
+.UserAddress-enter{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-2rem);
+}
+
+.UserAddress-enter-active{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+  transition: all 500ms ease-in-out;
+}
+
+
+.UserAddress-exit{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(-2rem);
+}
+
+.UserAddress-exit-active{
+  opacity: 0;
+  filter: blur(px);
+  transform: translateY(-2rem);
+  transition: all 500ms ease-in-out;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+
+/*Home component Animation*/
+.hero{
+  height: 60dvh;
+}
+
+
+.heroHeader-appear{
+  opacity: 0;
+}
+
+.heroHeader-appear-active{
+  opacity: 1;
+  transition: all 1200 ease-in;
+}
+
+.hero-appear{
+  position: fixed !important;
+  top: 0rem !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  filter: blur(10px);
+  z-index: 40 !important;
+}
+
+.hero-appear-active{
+  position: relative !important;
+  top: 0 !important;
+  left: 0;
+  width: 100% !important;
+  height: 60dvh !important;
+  filter: blur(0px);
+  transition: all 1200ms ease-in-out;
+}
+
+.shoes-appear {
+  transform: translateY(-10rem) !important;
+  opacity: 0;
+  backdrop-filter: blur(20px);
+}
+
+.shoes-appear-active {
+  opacity: 1;
+  transform: translateY(0rem);
+  backdrop-filter: blur(0px);
+  transition: all 2s ease-in-out;
+}
+
+.popupBox-enter{
+  transform: translateY(-70%) translateX(-50%) !important;
+  opacity: 0 ;
+}
+
+.popupBox-enter-active{
+  transform: translateY(-50%) translateX(-50%) !important;
+  opacity: 1;
+  transition: all 400ms ease-in-out;
+}
+
+.popupBox-exit {
+  transform: translateY(-50%) translateX(-50%) !important;
+  opacity: 1;
+}
+
+.popupBox-exit-active {
+  transform: translateY(-52%) translateX(-50%) !important;
+  opacity: 0 !important;
+  transition: all 400ms ease-in-out;
+}
+
+
+.registerMsG-appear{
+  top: 15% !important;
+  transform: translateY(-5em) ;
+  opacity: 0;
+}
+
+.registerMsG-appear-active{
+  top: 50% !important;
+  transform: translateY(0) ;
+  opacity: 1;
+  transition: all 2s ease-in-out;
+}
+
+.registerMsG-fade{
+  opacity: 1;
+}
+
+.registerMsG-fade-active{
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+
+.addAddress-enter{
+
+}
+
+.loading{
+  animation: loading 2s infinite ease-in-out;
+}
+
+@keyframes loading {
+  from {
+    opacity: .8;
+  }
+  to{
+    opacity: 1;
+  }
+}
