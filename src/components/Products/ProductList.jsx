@@ -31,13 +31,8 @@ function ProductList({product, viewProduct}) {
 						unmountOnExit
 					>
 						<div className={`bg-gray-200 max-md:h-48 h-60 rounded-md flex justify-center items-center transition-all ease-in-out duration-600  ${loading ? 'filter blur-md' : 'filter blur-0 '}`}>
-<<<<<<< HEAD
-							<img src={`${import.meta.env.BASE_URL}src/assets/images/${product.image}`}
+							<img src={`./public/images/${product.image}`}
 							 alt={product.name}
-=======
-							<img src={`../../assets/images/${product.image}`} />
-							 alt="img_not_found"
->>>>>>> a5a403edf03d80201fcd62a0079d386633d4b386
 							 className={`w-[90%] `}
 							 onLoad={() => setLoading(false)}
 							 onError={() => setLoading(false)}

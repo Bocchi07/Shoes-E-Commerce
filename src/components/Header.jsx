@@ -48,7 +48,7 @@ function Header({handleCart, cart, setIsGenderActive, isGenderActive, signupForm
 								<div className="flex flex-col justify-center items-center">
 
 										<LuUser className="cursor hover:scale-110 transition-all text-xl"/>
-										<p className='max-md:hidden max-w-20 overflow-x-auto'>{signupFormData[0].username}</p>
+										<p className='max-md:hidden max-w-20 overflow-x-hidden'>{signupFormData[0].username}</p>
 								</div>
 							</Link>
 						: <Link to="/signup-form"><LuUser className="cursor hover:scale-110 transition-all text-xl"/></Link>
