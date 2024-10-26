@@ -47,6 +47,8 @@ Visit the [Shoes E-Commerce website](https://shoe-haven7.vercel.app/) to explore
 ### Contributing
 Contributions are welcome! If you have suggestions for new features or improvements, feel free to open an issue or submit a pull request.
 
+**Note**: This application is currently front-end only, with no backend for user authentication or payment processing.
+
 ### License
 ```plaintext
 Designed and developed by Jeaven A. Paras.
@@ -62,5 +64,5 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and limitations under the License.
 
-**Note**: This application is currently front-end only, with no backend for user authentication or payment processing.
+
 
