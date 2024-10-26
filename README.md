@@ -1,3 +1,8 @@
+## Demo
+
+Here's a preview of the app in action:
+![ezgif-2-a7dfe67667](https://github.com/user-attachments/assets/ca14f7de-fc6e-4ca3-a988-4674396e365f)
+
 # Shoes E-Commerce
 
 Welcome to the **Shoes E-Commerce** application! This is a React-based e-commerce platform tailored for shoe enthusiasts. The application showcases a wide selection of shoes with detailed visuals, filter options, and a smooth browsing experience. Whether you’re looking for men’s, women’s, or kids’ footwear, this application provides an intuitive interface to find the perfect pair!
