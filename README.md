@@ -20,7 +20,7 @@ To bring this e-commerce application to life, we utilized several modern technol
 
 ## How to Use
 
-1. Visit the [Shoes E-Commerce website](https://shoe-haven7.vercel.app/).
+1. Visit the [Shoes E-Commerce](https://shoe-haven7.vercel.app/).
 2. Use the filter options to browse shoes by category, gender, color, and more.
 3. Click on a shoe card to view its detailed information, including price, size options, and additional images.
 4. Add items to the cart (in the future, this can be extended for a fully functional e-commerce experience with a backend).
