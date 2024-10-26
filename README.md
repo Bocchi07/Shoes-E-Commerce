@@ -2,6 +2,9 @@
 
 Welcome to the **Shoes E-Commerce** application! This is a React-based e-commerce platform tailored for shoe enthusiasts. The application showcases a wide selection of shoes with detailed visuals, filter options, and a smooth browsing experience. Whether you’re looking for men’s, women’s, or kids’ footwear, this application provides an intuitive interface to find the perfect pair!
 
+![Uploading daisuki-japanese-girl.gif…]()
+
+
 ## Features
 
 - **Browse and Filter**: Quickly browse shoes by categories like gender, color, and size. The intuitive filter system lets users customize their search to find exactly what they’re looking for.
